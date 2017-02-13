@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: text/html; charset=utf-8');
 class dbSql {
 	
 	static public $db_obj = null;
@@ -8,6 +8,8 @@ class dbSql {
 	private function __construct() {
 		require __DIR__.'/config.php';
 		$con = 'mysql:dbname=' . $name . ';host=' . $host;
+
+
 
 	    try{
             self::$db_obj = new PDO ($con, $user, $pw, array

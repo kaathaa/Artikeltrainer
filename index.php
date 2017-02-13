@@ -1,8 +1,4 @@
-<?php
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
+<?php header('Content-Type: text/html; charset=utf-8');
 session_start();
 
 include 'dbSql.class.php';
@@ -10,10 +6,12 @@ include 'article.class.php';
 
 $article = new Article();
 $article->get();
+
 ?>
 
 <!DOCTYPE html>
 <html lang="de">
+<meta charset="utf-8">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -15,7 +15,7 @@ class Article
 
 	public function get() {
 		$statement = $this->db->prepare('SELECT id, article, word_de, word_it, done
-										FROM articles WHERE done <= 30 ORDER BY RAND()');
+										FROM articles WHERE done <= 10 ORDER BY RAND()');
 		$statement->execute();
 		$data = $statement->fetch(PDO::FETCH_ASSOC);
 		$this->article = $data['article'];
@@ -57,7 +57,10 @@ class Article
 		$this->id = $_POST['id'];
 		return $this->id;		
 		} else {
-			echo '<a class="link_block" href="index.php">Bitte wähle einen Artikel aus</a>';
+			echo '<p class="result">
+				Bitte wähle einen Artikel aus
+				<a class="link_block" href="index.php">zurück</a>
+				</p>';
 		}
 	}	
 
@@ -92,4 +95,5 @@ class Article
 		$statement->execute();
 		require __DIR__.'/templates/show_all.php';
 	}
+	
 }

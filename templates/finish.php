@@ -4,6 +4,6 @@ if(isset($_SESSION['rightAnswer']) && isset($_SESSION['allAnswers'])) {
 } else {
 	echo '<p class="result">Du hast noch keine Frage beantwortet.</p>';
 } ?>
-<a class="link_block" href="index.php">LINK URL AUSTAUSCHEN!!!</a>
+<a class="link_block" href="index.php">zurück</a>
 	
 	

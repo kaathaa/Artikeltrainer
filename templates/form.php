@@ -1,9 +1,10 @@
+		
 		<form method="post" action="">
 			<div class="articles">
 				<div id="first_button" onclick="ChangeColorFirst()" class="form_group button">
 					<input type="radio" name="gender" id="male" value="der">
 					<label for="male">der</label>
-				</div>
+				</div>				
 				<div id="second_button" class="form_group button" onclick="ChangeColorSecond()">
 					<input type="radio" name="gender" id="female" value="die">
 					<label for="female">die</label>
@@ -21,3 +22,4 @@
 	
 			<?php require __DIR__.'/icons.php'; ?>
 		</form>
+		

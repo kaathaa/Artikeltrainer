@@ -16,4 +16,4 @@ while($row = $statement->fetch()) {
 }
 ?>
 </table>
-<a class="link_block" href="index.php">LINK URL AUSTAUSCHEN!!!</a>
+<a class="link_block" href="index.php">zurück</a>

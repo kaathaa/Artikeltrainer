@@ -4,9 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
-
-
 
 .wrapper {
     max-width: 500px;
@@ -17,6 +16,11 @@ h1{
     font-size: 20px;
     text-align:center;
     margin: 10px 0 20px 0;
+}
+@media(min-width:320px) {
+	h1 {
+		font-size: 38px;
+	}		
 }
 a{
 	padding-top: 20px;
@@ -30,6 +34,7 @@ a{
     border: 2px rgb(100,182,172);
     border-radius: 6px;
     padding: 10px;
+	width: 50%;
 }
 
 
@@ -38,7 +43,6 @@ a{
 }
 
 .form_group {
-    width: 35%;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
@@ -70,8 +74,13 @@ input[type=submit]{
 }
 
 .word_de {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: bold;
+}
+@media(min-width:320px) {
+	.word_de {
+		font-size: 30px;
+	}		
 }
 
 .icons {
@@ -81,10 +90,19 @@ input[type=submit]{
 }
 
 .icon {
-	display: inline;
-	float: right;
-	width: 30%;
+	margin-top: 20px;
 }
+@media(min-width:320px) {
+	.icon {
+		display: inline;
+		float: right;
+		width: 30%;
+		font-size: 30px;
+	}		
+}
+
+
+
 .icon-text {
 	font-size: 12px;
 	display: block;
@@ -99,6 +117,11 @@ input[type=submit]{
 	text-align: center;
 	font-size: 14px;
 	margin-bottom: 10px;
+}
+@media(min-width:320px) {
+	.result {
+		padding: 12px;
+	}		
 }
 .result .fa {
 	margin: 2% 0 4% 0;
@@ -116,6 +139,14 @@ table{
 	width: 100%;
 	border: 1px solid rgb(100,182,172);
 	border-collapse: collapse;
+}
+@media(min-width:320px) {
+	table {
+		font-size: 14px;
+	}	
+	tr {
+		height: 2.5em;
+	}
 }
 tr:nth-child(odd) {
 	background-color: rgb(218,255,239);
