@@ -96,4 +96,10 @@ class Article
 		require __DIR__.'/templates/show_all.php';
 	}
 	
+	public function download() {
+		$statement = $this->db->prepare('SELECT word_de, word_it FROM articles ORDER BY done DESC');
+		$statement->execute();
+		require __DIR__.'/pdf.php';		
+	}
+	
 }

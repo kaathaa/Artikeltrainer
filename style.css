@@ -15,17 +15,24 @@
 h1{
     font-size: 20px;
     text-align:center;
-    margin: 10px 0 20px 0;
+    margin: 20px 0 50px 0;
+}
+h1:hover{
+	background: rgb(218,255,239);
+	text-decoration: underline;
 }
 @media(min-width:320px) {
 	h1 {
 		font-size: 38px;
 	}		
 }
-a{
+a:not(:first-child){
 	padding-top: 20px;
 	color: rgb(100,182,172);
 	text-align: center;	
+}
+a:first-child{
+	text-decoration: none;
 }
 .link_block {
 	display: block;
@@ -72,7 +79,12 @@ input[type=submit]{
 	-moz-box-shadow: 3px 7px 0px 1px rgba(57,121,113,0.76);
 	box-shadow: 3px 7px 0px 1px rgba(57,121,113,0.76);
 }
-
+@media(min-width:320px){
+	input[type=submit]{
+		margin-top: 40px;
+		margin-bottom: 30px		
+	}
+}
 .word_de {
     font-size: 17px;
     font-weight: bold;
@@ -80,34 +92,39 @@ input[type=submit]{
 @media(min-width:320px) {
 	.word_de {
 		font-size: 30px;
+		margin-top: 40px;
 	}		
 }
+
 
 .icons {
 	width: 100%;
 	margin-top: 40px;
 	text-align: center;
+	margin-top: 10px;
 }
 
 .icon {
 	margin-top: 20px;
+	width: 50%;
+	float: left;
+	display: inline;
 }
-@media(min-width:320px) {
+@media(min-width:360px) {
 	.icon {
 		display: inline;
 		float: right;
-		width: 30%;
 		font-size: 30px;
+		width: 25%;
+		margin-top: 40px;
 	}		
 }
-
-
-
 .icon-text {
 	font-size: 12px;
 	display: block;
 	margin-top: 5px;
 }
+
 
 .result {
 	background: rgb(218,255,239);

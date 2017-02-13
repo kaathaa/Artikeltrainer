@@ -13,5 +13,10 @@
 			<a href="?finish"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i></a>
 			<span class="icon-text">Ergebnis</span>
 		</div>	
+		
+		<div class="icon">
+			<a href="?download"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+			<span class="icon-text">Download</span>
+		</div>	
 	</div>
 

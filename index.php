@@ -7,6 +7,10 @@ include 'article.class.php';
 $article = new Article();
 $article->get();
 
+if(isset($_GET['download'])){
+	$article->download();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +41,7 @@ $article->get();
 	<body>
 		<div class="wrapper">
 	
-			<h1>Artikeltraining</h1>
+			<h1><a href="index.php">Artikeltraining</a></h1>
 			<?php
 			if(isset($_GET['translate'])){
 				$article->translate();
