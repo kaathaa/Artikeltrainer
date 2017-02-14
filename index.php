@@ -21,7 +21,6 @@ if(isset($_GET['download'])){
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title></title>
 		<link rel="stylesheet" href="style.css">
-			
 		
 		<script src="https://use.fontawesome.com/a639b24457.js"></script>
 	

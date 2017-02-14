@@ -31,7 +31,7 @@ a:not(:first-child){
 	color: rgb(100,182,172);
 	text-align: center;	
 }
-a:first-child{
+h1 a{
 	text-decoration: none;
 }
 .link_block {
@@ -48,12 +48,21 @@ a:first-child{
 .articles {
     text-align: center;
 }
-
+@media(min-width:500px){
+	margin-top: 60px;
+}
 .form_group {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
     border: 2px solid rgb(100,182,172);
+}
+@media(min-width:500px) {
+	.form_group {
+		display: inline;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 .form_group:hover {
     background: rgb(218,255,239);
@@ -64,6 +73,11 @@ a:first-child{
 label {
     cursor: pointer;
     font-size: 24px;
+}
+@media(min-width:320px) {
+	label {
+		padding: 60px 30px;
+	}
 }
 input[type=radio]{
     display: none;
@@ -140,6 +154,12 @@ input[type=submit]{
 		padding: 12px;
 	}		
 }
+@media(min-width:500px) {
+	.result {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+}
 .result .fa {
 	margin: 2% 0 4% 0;
 }
@@ -178,9 +198,3 @@ th, td {
 	padding-right: 2px;
 	padding-left: 2px;
 }
-
-
-
-
-
-
