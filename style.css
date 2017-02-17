@@ -74,11 +74,6 @@ label {
     cursor: pointer;
     font-size: 24px;
 }
-@media(min-width:320px) {
-	label {
-		padding: 60px 30px;
-	}
-}
 input[type=radio]{
     display: none;
 }
