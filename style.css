@@ -15,10 +15,9 @@
 h1{
     font-size: 20px;
     text-align:center;
-    margin: 20px 0 50px 0;
+    margin-top: 20px;
 }
 h1:hover{
-	background: rgb(218,255,239);
 	text-decoration: underline;
 }
 @media(min-width:320px) {
@@ -37,66 +36,34 @@ h1 a{
 .link_block {
 	display: block;
 }
-.button {
-    border: 2px rgb(100,182,172);
+
+form {
+    text-align: center;
+	background: rgb(218,255,239);
+	border: 2px solid rgb(100,182,172);
     border-radius: 6px;
     padding: 10px;
-	width: 50%;
+	margin-top: 20px;
 }
-
-
-.articles {
-    text-align: center;
-}
-@media(min-width:500px){
-	margin-top: 60px;
-}
-.form_group {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 15px;
+button {
     border: 2px solid rgb(100,182,172);
+    border-radius: 6px;
+    padding: 10px;
+	margin: 8px;
+	width: 50%;
+	background: white;
 }
-@media(min-width:500px) {
-	.form_group {
+@media(min-width:380px) {
+	button {
 		display: inline;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-}
-.form_group:hover {
-    background: rgb(218,255,239);
-}
-.form_group:active {
-    background: rgb(192,253,251);
-}
-label {
-    cursor: pointer;
-    font-size: 24px;
-}
-input[type=radio]{
-    display: none;
-}
-input[type=submit]{
-    width: 100%;
-    background: rgb(100,182,172);
-    text-transform: uppercase;
-    color: white;
-    font-size: 20px;
-    margin-top: 30px;
-	-webkit-box-shadow: 3px 7px 0px 1px rgba(57,121,113,0.76);
-	-moz-box-shadow: 3px 7px 0px 1px rgba(57,121,113,0.76);
-	box-shadow: 3px 7px 0px 1px rgba(57,121,113,0.76);
-}
-@media(min-width:320px){
-	input[type=submit]{
-		margin-top: 40px;
-		margin-bottom: 30px		
+		width: 25%;
+		font-size: 25px;
 	}
 }
 .word_de {
     font-size: 17px;
     font-weight: bold;
+	margin: 10px 0;
 }
 @media(min-width:320px) {
 	.word_de {
@@ -108,7 +75,7 @@ input[type=submit]{
 
 .icons {
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 50px;
 	text-align: center;
 	margin-top: 10px;
 }
@@ -119,7 +86,7 @@ input[type=submit]{
 	float: left;
 	display: inline;
 }
-@media(min-width:360px) {
+@media(min-width:380px) {
 	.icon {
 		display: inline;
 		float: right;

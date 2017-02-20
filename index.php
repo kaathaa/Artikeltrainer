@@ -23,19 +23,6 @@ if(isset($_GET['download'])){
 		<link rel="stylesheet" href="style.css">
 		
 		<script src="https://use.fontawesome.com/a639b24457.js"></script>
-	
-		<script type="text/javascript">
-			function ChangeColorFirst () {
-				first_button.style.backgroundColor = "#64B6AC";
-			}
-			function ChangeColorSecond () {
-				second_button.style.backgroundColor = "#64B6AC";
-			}
-			function ChangeColorThird () {
-				third_button.style.backgroundColor = "#64B6AC";
-			}
-		</script>
-
 	</head>
 	<body>
 		<div class="wrapper">
@@ -48,7 +35,7 @@ if(isset($_GET['download'])){
 				include __DIR__.'/templates/finish.php';
 			}elseif(isset($_GET['showAll'])) {
 				$article->showAll();
-			} elseif (isset($_POST['submit'])) {
+			} elseif (isset($_POST['der']) || isset($_POST['die']) || isset($_POST['das'])) {
 				$article->compare();
 			} else {
 				$article->showForm();

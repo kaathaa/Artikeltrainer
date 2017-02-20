@@ -41,29 +41,32 @@ class Article
 		return $this->id;
 	}
 	
+	
 	public function compare() {
-		if(isset($_POST['gender'])) {
-		if($_POST['gender'] === $_POST['article']) {
-			$article = new Article();
-			$article->count();
-			$article->countRightAnswer();
-			require __DIR__.'/templates/result_right.php';
-		} else {
-			$article = new Article();
-			require __DIR__.'/templates/result_wrong.php';
-		}
-		$article->countAllAnswers();
-		$article->showForm();
-		$this->id = $_POST['id'];
-		return $this->id;		
+		if(isset($_POST['der']) || isset($_POST['die']) || isset($_POST['das'])) {			
+			if(isset($_POST['der']) && ($_POST['article'] === 'der') ||
+				isset($_POST['die']) && ($_POST['article'] === 'die') ||
+				isset($_POST['das']) && ($_POST['article'] === 'das')) {
+					$article = new Article();
+					$article->count();
+					$article->countRightAnswer();
+					require __DIR__.'/templates/result_right.php';			
+			} else {
+				$article = new Article();
+				require __DIR__.'/templates/result_wrong.php';
+			}
+			$article->countAllAnswers();
+			$article->showForm();
+			$this->id = $_POST['id'];
+			return $this->id;		
 		} else {
 			echo '<p class="result">
 				Bitte wähle einen Artikel aus
 				<a class="link_block" href="index.php">zurück</a>
 				</p>';
 		}
-	}	
-
+	}
+	
 	public function translate() {
 		$id = $_GET['id'];	
 		$statement = $this->db->prepare("SELECT word_de, word_it FROM articles WHERE id = ?");
